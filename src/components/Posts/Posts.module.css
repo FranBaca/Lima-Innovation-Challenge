@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&display=swap');
+.postsCards{
+    display: flex;
+    flex-direction: column;
+    height: 1050px;
+    width: 900px;
+    border: 2px solid gray;
+    border-radius: 35px;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solidr rgba(255,255,255,0.5);
+    color:#000000;
+    background: rgba(255,255,255,0.1);
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5) ;
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+    font-size: 28px;
+    align-items: center;
+    text-decoration: none;
+    list-style-type: none;
+    margin-top: 15px;
+    margin-left: 98px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.imagesPosts{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    margin-top: 5%;
+}
+.users{
+    display: flex;
+    border-radius: 70px;
+}
+.userCard{
+    width: 80px;
+    height: 90px;
+    align-self: flex-start;
+
+}
+.infoPost{
+    margin-top: 50px;
+}
+
+.text{
+    font-size: 18px;
+    
+}
+.link{
+    text-decoration: none;
+    font-size: small;
+}

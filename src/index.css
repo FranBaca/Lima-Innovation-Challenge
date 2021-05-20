@@ -5,6 +5,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image:url(Fondo.jpg);
+  position:absolute;
+  min-height: 100%;
+  min-width: 100%;
+  background-attachment: fixed;
+  
 }
 
 code {
