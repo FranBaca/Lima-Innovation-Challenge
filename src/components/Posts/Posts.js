@@ -19,7 +19,7 @@ export default function Posts(props) {
         }
       };
 
-    var subtitle;
+    
   const [modalIsOpen,setIsOpen] = React.useState(false);
   const [modalIsOpen2, setIsOpen2] = React.useState(false)
   function openModal() {
@@ -96,15 +96,15 @@ export default function Posts(props) {
             </div>
             <div className={styles.infoPost}>
                 <img className={styles.imagesPosts} src={props.posts.image} alt="POST IMG NOT FOUND" />
-                <p className={styles.text}>{props.posts.text}</p>
+                <h6 className={styles.text}>{props.posts.text}</h6>
                 {props.posts.tags.map(e =>{
-                    return <button onClick={()=>filteredTags(e)}>{e}</button>
+                    return <button style={{border:"none", backgroundColor:"#143F46", cursor:"pointer", color:"#ffff", borderRadius:"20px", justifyContent:"spaceEvenly"}} onClick={()=>filteredTags(e)}>#{e}</button>
                 })}
                
-                <p className={styles.text}>{props.posts.publishDate}</p>
+                <p className={styles.text}>Published Date: {props.posts.publishDate}</p>
                 <a className={styles.link} href={props.posts.link}>Link</a>
-                <p className={styles.text}>{props.posts.likes}</p>
-                <button onClick={openModal2}> 
+                <p className={styles.text}>Likes: {props.posts.likes}</p>
+                <button style={{border:"none", backgroundColor:"transparent", cursor:"pointer"}} onClick={openModal2}> 
                 Comments
                 </button>
             </div>

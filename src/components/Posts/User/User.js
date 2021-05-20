@@ -1,10 +1,8 @@
-import React,{useEffect, useState} from 'react'
-import axios from "axios";
+import React,{useEffect} from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { getUserDetail } from '../../../actions';
 
-const BASE_URL = 'https://dummyapi.io/data/api';
-const APP_ID = '60a6523a9f1c3c90368211b4';
+
 
 export default function User(props) {
     console.log(props)

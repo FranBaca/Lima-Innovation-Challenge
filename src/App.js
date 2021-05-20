@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import Posts from "./components/Posts/Posts"
-import User from "./components/Posts/User/User"
-import {Route, Switch} from 'react-router-dom';
+
 
 import axios from 'axios';
 import { useDispatch } from 'react-redux';
